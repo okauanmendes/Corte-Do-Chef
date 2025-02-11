@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author LAB 03
+ * @author kauan mendes
  */
 public class VendaControle {
     public boolean vender (Venda venda) throws SQLException {
