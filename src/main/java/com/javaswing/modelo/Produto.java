@@ -8,6 +8,7 @@ package com.javaswing.modelo;
  *
  * @author Kauan
  */
+
 public class Produto {
     
     private int codigo;
@@ -26,7 +27,6 @@ public class Produto {
         this.kilo = kilo;
     }
     
-    
     public int getCodigo() {
         return codigo;
     }
@@ -43,7 +43,6 @@ public class Produto {
         this.quantidade = quantidade;
     }
     
-    
     public String getMercadoria() {
         return mercadoria;
     }
@@ -52,9 +51,10 @@ public class Produto {
         this.mercadoria = mercadoria;
     }
 
- public String getPreco() {
+    public String getPreco() {
         return Preco;
     }
+    
     public void setPreco(String preco) {
         this.Preco = preco;
     }
