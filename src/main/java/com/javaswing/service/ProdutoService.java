@@ -11,8 +11,9 @@ import java.util.ArrayList;
 
 /**
  *
- * @author LAB 03
+ * @Kauan Mendes
  */
+
 public class ProdutoService {   
     
     public boolean cadastrar (Produto produto) throws SQLException{
