@@ -14,8 +14,9 @@ import java.util.ArrayList;
 
 /**
  *
- * @author LAB 03
+ * @author Kauan
  */
+
 public class ProdutoDao {
     public boolean cadastrar(Produto produto) throws SQLException{
         Conexao conexao = new Conexao();
@@ -56,7 +57,8 @@ public class ProdutoDao {
             }
             return listProduto;
                                      
-            }
+    }
+    
     public Produto consultarCodigo (Produto produto) throws SQLException {
         
         Produto produtoRetorno = new Produto ();
@@ -80,24 +82,26 @@ public class ProdutoDao {
     public boolean atualizar(Produto produto) throws SQLException {
         Conexao conexao = new Conexao();
         Connection connection = conexao.conectar();
-        boolean retorno = false;
-        String query = "UPDATE PRODUTO SET "
+            boolean retorno = false;
+            String query = "UPDATE PRODUTO SET "
                 + "Mercadoria = " + "'" +   produto.getMercadoria()  + "'," 
                 + "Quantidade =  "  +    produto.getQuantidade()  + ""
                 + "Preco =  "  +    produto.getPreco()  +
                 
                 " where codigo = " + produto.getCodigo();
         
-        try {
-            Statement statement = connection.createStatement();
-            retorno =  statement.execute(query);
-        }catch (SQLException ex) {
-            retorno = true;
-        } finally {
-            conexao.desconectar(connection);
-        }
+            try {
+                Statement statement = connection.createStatement();
+                retorno =  statement.execute(query);
+                
+            }catch (SQLException ex) {
+                retorno = true;
+                
+            } finally {
+                conexao.desconectar(connection);
+            }
         
-        return retorno;
+            return retorno;
     }
 
 }
