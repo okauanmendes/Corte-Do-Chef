@@ -10,14 +10,14 @@ import java.sql.SQLException;
 
 /**
  *
- * @author LAB 03
+ * @Kauan Mendes
  */
+
 public class VendaService {
-  public boolean vender (Venda venda) throws SQLException{
-        VendaDao vendaDao = new VendaDao();
-        return vendaDao.vender(venda);
+    public boolean vender (Venda venda) throws SQLException{
+            VendaDao vendaDao = new VendaDao();
+                return vendaDao.vender(venda);
         
     }
-    
-     
+        
 }
